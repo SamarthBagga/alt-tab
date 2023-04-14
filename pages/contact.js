@@ -35,17 +35,16 @@ function Contact() {
         <Navbar/>
         <div className='sections mentor flex items-center'>
         
-        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes'>
+        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes-2'>
           <div className='mt-20'>
-          <h1 className='text-left text-4xl ml-3 font-4xl'>Contact Us</h1>
+          <h1 className='text-left text-4xl font-4xl'>Contact Us</h1>
           <form ref={form} onSubmit={sendEmail}>
-          <h1>Contact Us</h1>
           <p>
             Please take a moment to get in touch, we will get back to you
             shortly.
           </p>
 
-          <div class="column">
+          <div class="column flex flex-col">
             <label for="the-name">Your Name</label>
             <input type="text" name="user_name" id="the-name" />
 
@@ -54,11 +53,11 @@ function Contact() {
 
             <label for="the-phone">Phone Number</label>
             <input type="tel" name="phone_num" id="the-phone" />
-          </div>
-          <div class="column">
+          
             <label for="the-message">Message</label>
             <textarea name="message" id="the-message"></textarea>
-            <button className="send click" type="submit">
+
+            <button className=" mt-3 send click" type="submit">
               Send Details
             </button>
           </div>
