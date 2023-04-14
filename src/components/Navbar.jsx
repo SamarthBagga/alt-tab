@@ -41,7 +41,7 @@ function Navbar() {
                       <Link href="/recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
                     </div>
                   )}
-                </div>                <Link href="/clients" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Clients</Link>
+                </div>                <Link href="/Contact" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Contact Us</Link>
               </div>
             </div>
           </div>

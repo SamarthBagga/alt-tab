@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "../src/components/Navbar";
 import { useRouter } from "next/router";
+import Footer from "../src/components/Footer";
 
 function Contact() {
   const form = useRef();
@@ -30,10 +31,14 @@ function Contact() {
   };
 
   return (
-    <section>
-      <Navbar />
-      <section id="about contact">
-        <form ref={form} onSubmit={sendEmail}>
+      <section className='mentor-section'>
+        <Navbar/>
+        <div className='sections mentor flex items-center'>
+        
+        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes'>
+          <div className='mt-20'>
+          <h1 className='text-left text-4xl ml-3 font-4xl'>Contact Us</h1>
+          <form ref={form} onSubmit={sendEmail}>
           <h1>Contact Us</h1>
           <p>
             Please take a moment to get in touch, we will get back to you
@@ -58,7 +63,12 @@ function Contact() {
             </button>
           </div>
         </form>
-      </section>
+</div>
+          
+
+        </div>
+        </div>
+        <Footer/>
     </section>
   );
 }
