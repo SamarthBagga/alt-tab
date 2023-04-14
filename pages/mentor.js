@@ -1,37 +1,68 @@
 import React, { useRef } from 'react';
 import Navbar from "../src/components/Navbar"
 import Link from 'next/link';
+import Footer from '../src/components/Footer';
 function mentor() {
   return (
-    <section>
+    <section className='mentor-section'>
         <Navbar/>
-        <section id="about">
-    <div className="w-11/12 mx-auto h-80vh flex flex-row ">
+        <div className='sections mentor flex items-center'>
         
-    <div className='w-4/12 my-auto items-center justify-center'>
-    <h1 className="text-3xl abt md:text-3xl sm:text-2xl font-bold text-left">Mentorship</h1>
-    </div>
-    <div className='w-8/12 ml-6 flex flex-col'>
-      
-      
-      <p className="mt-4 text-[1rem] md:text-lg text-left">
-      Our team of experienced IT mentors provides expert guidance and coaching for job readiness, skills development, and job success. We believe that mentorship is a key component of professional growth and success, and we are committed to helping IT professionals achieve their goals.    <br/><br/>
-      Our mentorship programs are tailored to your individual needs and career goals. We work with you to identify your strengths and areas for improvement, and we provide personalized guidance and support to help you achieve your goals. Our goal is to help you develop the skills and knowledge you need to succeed in the competitive world of IT.<br/><br/>
-      In addition to our mentorship services, we also offer IT recruitment solutions to help companies find the right talent for their IT needs. Our team of experienced recruiters specializes in identifying and attracting top IT professionals, and we work closely with our clients to understand their specific hiring needs.
-      <Link href="/Contact" class="text-blue-400">Register</Link>
-        </p>
+        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes'>
+          <div className='mt-20'>
+          <h1 className='text-left text-4xl ml-3 font-4xl'>Mentorship</h1>
+          <p className='mt-10 ml-3'>We understand that job interviews can be nerve-wracking, but with our mock interview services, you can gain the confidence and skills you need to succeed. We'll provide feedback on your responses, body language, and overall performance, helping you identify areas for improvement and fine-tune your interview skills.
+Don't let your next interview catch you off guard. Sign up for our mock interview services today and land your dream job!
+</p>
+</div>
+          
+
+        </div>
+        </div>
+        <div className='sections interview flex items-center'>
+
         
+        <div className='flex w-[80%] mx-auto mt-10 boxes'>
+        <div className='mt-20'>
+          <h1 className='text-left text-4xl ml-3 font-4xl'>Resume Services
+</h1>
+          <p className='mt-10 ml-3'> Your resume is your first impression to potential employers, and it's crucial to make it stand out from the crowd. At our resume services, we understand the importance of a strong and professional resume.
+
+ 
+
+Our team of expert writers will work with you to create a personalized, eye-catching resume that highlights your skills, achievements, and experiences. We understand that crafting a standout resume can be a daunting task, which is why we're here to help.
+
+​
+
+With our resume services, you can rest assured that your resume will make a lasting impression on potential employers, giving you the best chance of landing your dream job. Contact us today to get started!
 
 
-      
-      </div>
-      
-      
-    
+</p>
+</div>
+          
 
-    
-    </div>
-    </section>
+        </div>
+        </div>
+        <div className='sections resume flex items-center'>
+
+        
+        <div className='flex w-[80%] mx-auto mt-10 boxes'>
+        <div className='mt-20'>
+          <h1 className='text-left text-4xl ml-3 font-4xl'>Mock Interviews</h1>
+          <p className='mt-10 ml-3'>
+          We understand that job interviews can be nerve-wracking, but with our mock interview services, you can gain the confidence and skills you need to succeed. We'll provide feedback on your responses, body language, and overall performance, helping you identify areas for improvement and fine-tune your interview skills.
+
+Don't let your next interview catch you off guard. Sign up for our mock interview services today and land your dream job!
+
+
+</p>
+</div>
+          
+
+        </div>
+        </div>
+        
+        <Footer/>
     </section>
   );
 }

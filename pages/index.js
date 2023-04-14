@@ -8,9 +8,9 @@ import SimpleImageSlider from "react-simple-image-slider";
 import { useMediaQuery } from '@material-ui/core';
 
 const images = [
-  { url: "/logo.jpeg" },
-  { url: "/logo.jpeg" },
-  { url: "/logo.jpeg" },
+  { url: "/resume.webp" },
+  { url: "/interview.webp" },
+  { url: "/mentor.webp" },
   
 ];
 

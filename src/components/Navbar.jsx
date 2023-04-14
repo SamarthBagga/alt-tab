@@ -5,6 +5,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const handleDropdownClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
 
   return (
     <nav className="h-[6rem] text-white w-full z-10">
@@ -22,8 +27,21 @@ function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
                 <Link href="/about" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">About</Link>
-                <Link href="/services" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Services</Link>
-                <Link href="/clients" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Clients</Link>
+                <div className="relative">
+                  <button
+                    onClick={handleDropdownClick}
+                    onBlur={() => setTimeout(() => setShowDropdown(false), 100)}
+                    className={`hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium ${showDropdown ? 'text-yellow-200' : ''}`}
+                  >
+                    Services
+                  </button>
+                  {showDropdown && (
+                    <div className="absolute top-full left-0 z-50 bg-gray-800 py-2">
+                      <Link href="/mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
+                      <Link href="/recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
+                    </div>
+                  )}
+                </div>                <Link href="/clients" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Clients</Link>
               </div>
             </div>
           </div>
@@ -41,8 +59,21 @@ function Navbar() {
         <div className="px-2 pt-2 pb-3 sm:px-3 bg-gray-800">
           <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Home</Link>
           <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">About</Link>
-          <Link href="/services" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Services</Link>
-          <Link href="/clients" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Clients</Link>
+          <div className="relative">
+                  <button
+                    onClick={handleDropdownClick}
+                    onBlur={() => setTimeout(() => setShowDropdown(false), 100)}
+                    className={`hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium ${showDropdown ? 'text-yellow-200' : ''}`}
+                  >
+                    Services
+                  </button>
+                  {showDropdown && (
+                    <div className="absolute top-full left-0 z-50 bg-gray-800 py-2">
+                      <Link href="/mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
+                      <Link href="/recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
+                    </div>
+                  )}
+                </div>          <Link href="/Contact" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Contact Us</Link>
         </div>
       </div>
     </nav>

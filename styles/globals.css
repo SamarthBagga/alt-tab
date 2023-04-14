@@ -199,8 +199,10 @@ background-color: var(--secondaryColor);
     margin-left: 0;
   }
   .about{
-    height: 130vh;
+    height: 140vh;
+    flex-direction: column;
   }
+
   
   
   
@@ -210,6 +212,44 @@ background-color: var(--secondaryColor);
   border: 3px solid white; 
   background-color: #949494; 
 }
+
+.resume{
+  background-image: url('/resume.webp');
+  height: 90vh;
+}
+.interview{
+  background-image: url('/interview.webp');
+  height:90vh;
+}
+.mentor{
+  background-image:url('/mentor.webp');
+  height: 90vh;
+}
+.boxes{
+  height: 60vh;
+  width: 150vh;
+  background-color: #E3E3DF;
+
+}
+@media (max-width: 800px) {
+
+.boxes{
+  height: 85vh !important;
+}
+.names{
+  flex-direction: column;
+  margin-left: 0 !important;
+}
+.name2{
+  margin-left: 0;
+}
+}
+.sections{
+  height: 120vh;
+}
+
+
+
 
 
 
