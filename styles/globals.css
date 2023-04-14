@@ -188,9 +188,29 @@ background-color: var(--secondaryColor);
   .hero-section{
     min-height: 50vh;
   }
+  .hero{
+    justify-content: space-around;
+  }
+  .stuff{
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+  .second{
+    margin-left: 0;
+  }
+  .about{
+    height: 130vh;
+  }
+  
   
   
 }
+.name{
+  height: 6rem;
+  border: 3px solid white; 
+  background-color: #949494; 
+}
+
 
 
 
