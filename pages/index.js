@@ -6,6 +6,7 @@ import Footer from '../src/components/Footer'
 import Link from 'next/link'
 import SimpleImageSlider from "react-simple-image-slider";
 import { useMediaQuery } from '@material-ui/core';
+import data from "../data.json"
 
 const images = [
   { url: "/peoples.jpg" },
@@ -57,7 +58,7 @@ export default function Home() {
       <Link href="/mentor"><div className=' text-white mt-3 button h-[3.5rem] green border-2 border-white text-2xl font-medium '><p className='ml-3'>We Mentor</p></div></Link>
       </div>
       <div className='box mt-3 h-[12rem] text-white font-medium'>
-      Welcome to Alt Tab Consulting, your go-to partner for IT recruitment, mentoring, and project delivery. We specialize in providing customized and innovative solutions to help you find the best IT talent, develop your existing team, and deliver successful IT projects.
+      {data.homePageText}
       </div>
     </div>
     </div>

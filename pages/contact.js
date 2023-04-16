@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import Navbar from "../src/components/Navbar";
 import { useRouter } from "next/router";
 import Footer from "../src/components/Footer";
+import data from "../data.json"
 
 function Contact() {
   const form = useRef();
@@ -51,9 +52,9 @@ function Contact() {
       <div className="sections mentor flex items-center">
         <div className="flex flex-col items-center w-[80%] mx-auto mt-10 boxes-2">
           <div className="mt-20">
-            <h1 className="text-left text-4xl font-4xl">Contact Us</h1>
+            <h1 className="text-left text-4xl font-4xl">{data.contactTitle}</h1>
             <form ref={form} onSubmit={sendEmail}>
-              <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+              <p>{data.contactText}</p>
 
               <div className="column flex flex-col">
                 <label htmlFor="the-name">Your Name</label>
