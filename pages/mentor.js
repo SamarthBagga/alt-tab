@@ -1,14 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from "../src/components/Navbar"
 import Link from 'next/link';
 import Footer from '../src/components/Footer';
+import { useState } from 'react';
+import 'aos/dist/aos.css'
+import Aos from 'aos';
+
+
+
 function mentor() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+  },[]);
+
+
   return (
-    <section className='mentor-section'>
+    <section className='mentor-section top'>
         <Navbar/>
-        <div className='sections mentor flex items-center'>
         
-        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes'>
+
+        <div className='sections mentor flex items-center'>
+          
+        
+        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes' data-aos="fade-down" >
           <div className='mt-20'>
           <h1 className='text-left text-4xl ml-3 font-4xl'>Mentorship</h1>
           <p className='mt-10 ml-3'>We understand that job interviews can be nerve-wracking, but with our mock interview services, you can gain the confidence and skills you need to succeed. We'll provide feedback on your responses, body language, and overall performance, helping you identify areas for improvement and fine-tune your interview skills.
@@ -21,10 +35,10 @@ Don't let your next interview catch you off guard. Sign up for our mock intervie
 
         </div>
         </div>
-        <div className='sections interview flex items-center'>
+        <div className='sections interview flex items-center' >
 
         
-        <div className='flex w-[80%] mx-auto mt-10 boxes'>
+        <div className='flex w-[80%] mx-auto mt-10 boxes' data-aos="fade-down" >
         <div className='mt-20'>
           <h1 className='text-left text-4xl ml-3 font-4xl'>Resume Services
 </h1>
@@ -45,10 +59,10 @@ With our resume services, you can rest assured that your resume will make a last
 
         </div>
         </div>
-        <div className='sections resume flex items-center'>
+        <div className='sections resume flex items-center' >
 
         
-        <div className='flex w-[80%] mx-auto mt-10 boxes'>
+        <div className='flex w-[80%] mx-auto mt-10 boxes' data-aos="fade-down">
         <div className='mt-20'>
           <h1 className='text-left text-4xl ml-3 font-4xl'>Mock Interviews</h1>
           <p className='mt-10 ml-3'>
