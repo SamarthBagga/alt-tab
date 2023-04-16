@@ -8,8 +8,8 @@ import SimpleImageSlider from "react-simple-image-slider";
 import { useMediaQuery } from '@material-ui/core';
 
 const images = [
-  { url: "/resume.webp" },
-  { url: "/interview.webp" },
+  { url: "/peoples.jpg" },
+  { url: "/people.jpg" },
   { url: "/mentor.webp" },
   
 ];
@@ -51,35 +51,18 @@ export default function Home() {
       
       
 
-    <div className='buttons flex flex-col w-[20rem] h-[25rem] justify-between'>
-      <div className='flex flex-col h-[10rem] justify-between'>
-      <Link href="/Contact"><div className=' button h-[4rem] border-2 border-white text-4xl font-medium'>We Recruit</div></Link>
-      <Link href="/Contact"><div className=' button h-[4rem] border-2 border-white mt-1 text-4xl font-medium '>We Mentor</div></Link>
-      <Link href="/Contact"><div className=' button h-[4rem] border-2 border-white mt-1 text-4xl font-medium'>We Deliver</div></Link>
+    <div className='buttons flex flex-col w-[20rem] h-[25rem] '>
+      <div className='flex flex-col h-[10rem]'>
+      <Link href="/recruit"><div className=' text-white button h-[3.5rem] border-2 orange border-white text-2xl font-medium'><p className='ml-3'>We Recruit</p></div></Link>
+      <Link href="/mentor"><div className=' text-white mt-3 button h-[3.5rem] green border-2 border-white text-2xl font-medium '><p className='ml-3'>We Mentor</p></div></Link>
       </div>
-      <div className='box h-[12rem] text-white font-medium '>
+      <div className='box mt-3 h-[12rem] text-white font-medium'>
       Welcome to Alt Tab Consulting, your go-to partner for IT recruitment, mentoring, and project delivery. We specialize in providing customized and innovative solutions to help you find the best IT talent, develop your existing team, and deliver successful IT projects.
       </div>
-
     </div>
     </div>
-    
-    
-      
-
-      
-      
-    
-   
-    
-   
- 
-
-
-
-
-    
-    <Footer className="foot bottom-0"/>
+  
+    <Footer className="bottom-0"/>
  </section>
 
   );

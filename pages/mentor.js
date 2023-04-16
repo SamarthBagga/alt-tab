@@ -13,6 +13,8 @@ function mentor() {
           <h1 className='text-left text-4xl ml-3 font-4xl'>Mentorship</h1>
           <p className='mt-10 ml-3'>We understand that job interviews can be nerve-wracking, but with our mock interview services, you can gain the confidence and skills you need to succeed. We'll provide feedback on your responses, body language, and overall performance, helping you identify areas for improvement and fine-tune your interview skills.
 Don't let your next interview catch you off guard. Sign up for our mock interview services today and land your dream job!
+<br/>
+      <span className="underline">If you would like to know more, please <Link className="text-blue-500" href="/Contact">contact us</Link></span>
 </p>
 </div>
           

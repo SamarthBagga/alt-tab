@@ -146,17 +146,19 @@ nav{
 
 }
 .button:hover{
-  background-color: black;
+  background: -webkit-linear-gradient(top, rgb(131, 131, 131) 0%, rgb(74, 74, 74) 20%, rgb(26, 26, 26) 60%, rgb(2, 2, 2) 100%);
+
   -webkit-transition: all 500ms ease;
 -moz-transition: all 500ms ease;
 -ms-transition: all 500ms ease;
 -o-transition: all 500ms ease;
 transition: all 500ms ease;
-background-color: var(--secondaryColor);
+
 
 }
 .box{
-  background-color: var(--secondaryColor);
+  background-color:#D982C5;
+  border: 1.5px solid white;
 
 }
 .hero-section{
@@ -169,7 +171,7 @@ background-color: var(--secondaryColor);
 @media (max-width: 800px) {
   .hero{
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
   }
   .box{
     margin-top: 3rem;
@@ -215,14 +217,20 @@ background-color: var(--secondaryColor);
 
 .resume{
   background-image: url('/resume.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90vh;
 }
 .interview{
   background-image: url('/interview.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
   height:90vh;
 }
 .mentor{
   background-image:url('/mentor.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90vh;
 }
 .boxes{
@@ -263,6 +271,33 @@ background-color: var(--secondaryColor);
   transition: all 500ms ease;
   background-color: var(--secondaryColor);
 }
+.orange{
+  background: -webkit-linear-gradient(top, rgb(250, 221, 168) 0%, rgb(246, 199, 111) 21%, rgb(243, 181, 65) 62%, rgb(242, 174, 48) 97%, rgb(255, 255, 255) 99%, rgb(255, 255, 255) 100%);
+
+}
+.green{
+  background: -webkit-linear-gradient(top, rgb(181, 206, 171) 0%, rgb(143, 185, 118) 20%, rgb(107, 166, 68) 75%, rgb(101, 163, 59) 100%);
+
+}
+@media (max-width: 500px) {
+  .footerr{
+    height: 30rem;
+    display: grid;
+  /*Using the full width/height of the designated box elements, use fr as in example below */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /*Delete the two lines above and add more/less columns/rows by specifying one more for each below */
+  grid-template-columns: 130px 130px;
+  grid-template-rows: 140px 140px;
+  grid-gap: 80px;
+  }
+  .main-footer{
+    height: 30rem;
+    
+
+  }
+}
+
 
 
 
