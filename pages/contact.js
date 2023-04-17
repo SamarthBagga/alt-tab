@@ -52,7 +52,7 @@ function Contact() {
       <div className="sections mentor flex items-center">
         <div className="flex flex-col items-center w-[80%] mx-auto mt-10 boxes-2">
           <div className="mt-20">
-            <h1 className="text-left text-4xl font-4xl">{data.contactTitle}</h1>
+            <p className="text-left text-4xl font-4xl">{data.contactTitle}</p>
             <form ref={form} onSubmit={sendEmail}>
               <p>{data.contactText}</p>
 

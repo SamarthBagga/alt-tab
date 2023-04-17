@@ -37,8 +37,8 @@ function mentor() {
         
         <div className='flex w-[80%] mx-auto mt-10 boxes' data-aos="fade-down" >
         <div className='mt-20'>
-          <h1 className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle2}
-</h1>
+          <p className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle2}
+</p>
           <p className='mt-10 ml-3'>{data.mentorText2}</p>
 </div>
           
@@ -50,7 +50,7 @@ function mentor() {
         
         <div className='flex w-[80%] mx-auto mt-10 boxes' data-aos="fade-down">
         <div className='mt-20'>
-          <h1 className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle3}</h1>
+          <p className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle3}</p>
           <p className='mt-10 ml-3'>{data.mentorText3}</p>
 </div>
           
