@@ -5,6 +5,7 @@ import Footer from '../src/components/Footer';
 import 'aos/dist/aos.css'
 import Aos from 'aos';
 import data from "../data.json"
+import Image from 'next/image';
 
 
 
@@ -20,17 +21,15 @@ function mentor() {
         
 
         <div className='sections mentor flex items-center'>
-          
-        
-        <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes' data-aos="fade-down" >
-          <div className='mt-20'>
-          <h1 className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle1}</h1>
-          <p className='mt-10 ml-3'>{data.mentorText1}<br/><span className="underline">If you would like to know more, please <Link className="text-blue-500" href="/Contact">contact us</Link></span></p>
+  <div className='background-image-wrapper'>
+  </div>
+  <div className='flex flex-col items-center w-[80%] mx-auto mt-10 boxes' data-aos="fade-down">
+    <div className='mt-20'>
+      <h1 className='text-left text-4xl ml-3 font-4xl'>{data.mentorTitle1}</h1>
+      <p className='mt-10 ml-3'>{data.mentorText1}<br/><span className="underline">If you would like to know more, please <Link className="text-blue-500" href="/Contact">contact us</Link></span></p>
+    </div>
+  </div>
 </div>
-          
-
-        </div>
-        </div>
         <div className='sections interview flex items-center' >
 
         

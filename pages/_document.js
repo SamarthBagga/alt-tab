@@ -7,6 +7,8 @@ export default function Document() {
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Outfit:wght@300;400&family=Tinos&display=swap" rel="stylesheet"/>
+<link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
+
       </Head>
       <body>
         <Main />

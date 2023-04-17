@@ -32,12 +32,12 @@ export default function Home() {
    <section className='hero-section'>
     <Head>
     <meta charset="UTF-8"/>
-  <meta name="description" content="Job Consulting in Australia"/>
+  <meta name="description" content="Alt Tab Consulting is a consulting firm based in Ballarat, Australia. We are committed to mentoring and recruiting IT profesionals who aspire to find well-paying jobs and settle in Australia. Our team of experts provides tailored guidance and support to help our clients navigate the Australian job market and overcome any challenges that may arise during the recruitment process. With our extensive knowledge and experience, we help our clients realize their career goals and establish themselves in their new home. Join us on this exciting journey and let us help you build a successful career in Australia."/>
   <meta name="keywords" content="Alt Tab Consulting"/>
-  <meta name="keywords" content="Job Consulting in Australia"/>
+  <meta name="keywords" content="Job Consulting in Australia, Job Recruiting in Australia"/>
   <meta name="author" content="Ashish Kakkan"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Alt Tab Consulting</title>
+      <title>Alt Tab Consulting- Consulting Firm Based in Australia</title>
       
       </Head>   
       <Navbar/> 
