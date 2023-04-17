@@ -63,13 +63,10 @@ transition: all 500ms ease;
 }
   @media (max-width: 800px) {
     .hero{
-      height: 90vh;
+      height: 90vh !important;
     }
   .box{
     margin-top: 3rem;
-  }
-  .hero{
-    height: 50vh;
   }
   .foot{
     bottom: 0;
