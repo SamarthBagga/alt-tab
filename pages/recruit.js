@@ -7,7 +7,7 @@ import Aos from 'aos';
 import { useEffect } from "react";
 import data from "../data.json"
 
-function recruit() {
+function Recruit() {
   useEffect(()=>{
     Aos.init({duration:1500});
   },[]);
@@ -42,4 +42,4 @@ function recruit() {
   );
 }
 
-export default recruit;
+export default Recruit;

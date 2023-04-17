@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 
 
-function mentor() {
+function Mentor() {
   useEffect(()=>{
     Aos.init({duration:1500});
   },[]);
@@ -62,4 +62,4 @@ function mentor() {
   );
 }
 
-export default mentor
+export default Mentor

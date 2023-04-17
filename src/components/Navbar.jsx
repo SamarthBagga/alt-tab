@@ -37,8 +37,8 @@ function Navbar() {
                   </button>
                   {showDropdown && (
                     <div className="absolute top-full left-0 z-50 bg-gray-800 py-2">
-                      <Link href="/mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
-                      <Link href="/recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
+                      <Link href="/Mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
+                      <Link href="/Recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
                     </div>
                   )}
                 </div>                <Link href="/Contact" className="hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Contact Us</Link>
@@ -69,8 +69,8 @@ function Navbar() {
                   </button>
                   {showDropdown && (
                     <div className="absolute top-full left-0 z-50 bg-gray-800 py-2">
-                      <Link href="/mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
-                      <Link href="/recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
+                      <Link href="/Mentor" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Mentorship</Link>
+                      <Link href="/Recruit" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Recruitment</Link>
                     </div>
                   )}
                 </div>          <Link href="/Contact" className="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-gray-700">Contact Us</Link>

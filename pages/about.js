@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Footer from '../src/components/Footer';
 import Image from 'next/image';
 import data from "../data.json"
-function mentor() {
+function about() {
   return (
     <section>
         <Navbar/>
@@ -18,4 +18,4 @@ function mentor() {
   );
 }
 
-export default mentor
+export default about
