@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from "../src/components/Navbar"
 import Link from 'next/link';
 import Footer from '../src/components/Footer';
 import 'aos/dist/aos.css'
 import Aos from 'aos';
 import data from "../data.json"
-import Image from 'next/image';
+import { useEffect } from 'react';
+
 
 
 
