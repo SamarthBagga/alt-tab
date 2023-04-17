@@ -62,6 +62,9 @@ transition: all 500ms ease;
   }
 }
   @media (max-width: 800px) {
+    .hero{
+      height: 90vh;
+    }
   .box{
     margin-top: 3rem;
   }
