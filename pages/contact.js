@@ -65,8 +65,8 @@ function Contact() {
 
                 <label htmlFor="the-phone">Phone Number</label>
                 <input type="tel" name="phone_num" id="the-phone" />
-
-                <label htmlFor="the-options">Select options</label>
+                <br/>
+                <label htmlFor="the-options">Enquiry For</label>
                 <div id="the-options">
                   <label>
                     <input
@@ -96,12 +96,13 @@ function Contact() {
                     Other
                   </label>
                 </div>
+                <br/>
 
                 <label htmlFor="the-message">Message</label>
                 <textarea
                   name="message"
                   id="the-message"
-                  value={`Selected options: ${option1 ? "Mentor, " : ""}${
+                  value={`Enquiry For: ${option1 ? "Mentor, " : ""}${
                     option2 ? "Recruit, " : ""
                   }${option3 ? "Other" : ""}`}
                 ></textarea>
