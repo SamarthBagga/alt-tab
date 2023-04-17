@@ -41,7 +41,7 @@ export default function Home() {
       
       </Head>   
       <Navbar/> 
-      <div className='hero flex h-[80vh] mt-3 w-[65rem] mx-auto justify-between'>
+      <div className='hero flex h-[80vh] mt-3 w-[80vw] mx-auto justify-between'>
       <div>
       {isSmallScreen
         ? <SimpleImageSlider width={320} height={150} images={images} showBullets={true} showNavs={true} />
@@ -52,12 +52,12 @@ export default function Home() {
       
       
 
-    <div className='buttons flex flex-col w-[20rem] h-[25rem] '>
+    <div className='buttons flex flex-col w-[20rem] h-[20.5rem] '>
       <div className='flex flex-col h-[10rem]'>
       <Link href="/recruit"><div className=' text-white button h-[3.5rem] border-2 orange border-white text-2xl font-medium'><p className='ml-3'>We Recruit</p></div></Link>
       <Link href="/mentor"><div className=' text-white mt-3 button h-[3.5rem] green border-2 border-white text-2xl font-medium '><p className='ml-3'>We Mentor</p></div></Link>
       </div>
-      <div className='box mt-3 h-[12rem] text-white font-medium'>
+      <div className='box h-[12rem] text-white font-medium'>
       {data.homePageText}
       </div>
     </div>

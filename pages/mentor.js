@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from "../src/components/Navbar"
 import Link from 'next/link';
 import Footer from '../src/components/Footer';
-import { useState } from 'react';
 import 'aos/dist/aos.css'
 import Aos from 'aos';
 import data from "../data.json"
